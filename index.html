@@ -1,73 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Mini Games</title>
-<link rel="stylesheet" href="style.css">
 
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
+<header>
   <h1>🎮 L3ETAAR COMMUNITY</h1>
-<p>9ssser m3a krek w ncheet 🔥</p>
-  </header>
+  <p>9ssser m3a krek w ncheet 🔥</p>
+</header>
+
 <section class="games-section">
+
   <h2>🎮 اختار اللعبة</h2>
-  <p class="text">شنو بغيتي تلعب مع صحابك؟</p>
+
+  <p class="text">
+    شنو بغيتي تلعب مع صحابك؟
+  </p>
 
   <div class="games-grid">
 
+    <!-- Code Names -->
+
     <div class="game-card">
+
       <div class="game-icon">🕵️</div>
+
       <h3>Code Names</h3>
-      <p>خمّن الكلمات وربح مع الفريق ديالك!</p>
-      <button>🎮 لعب</button>
+
+      <p>
+        خمّن الكلمات وربح مع الفريق ديالك!
+      </p>
+
+      <a href="games/codenames/index.html">
+        <button>🎮 لعب</button>
+      </a>
+
     </div>
 
+    <!-- Quiz -->
+
     <div class="game-card">
+
       <div class="game-icon">🧠</div>
+
       <h3>Quiz</h3>
-      <p>شوف شكون فيكم كيعرف كثر!</p>
-      <button>🎮 لعب</button>
+
+      <p>
+        شوف شكون فيكم كيعرف كثر!
+      </p>
+
+      <a href="games/quiz/index.html">
+        <button>🎮 لعب</button>
+      </a>
+
     </div>
 
+    <!-- Guess Word -->
+
     <div class="game-card">
+
       <div class="game-icon">🔤</div>
+
       <h3>خمن الكلمة</h3>
-      <p>خمن الكلمة قبل ما يسالي الوقت!</p>
-      <button>🎮 لعب</button>
+
+      <p>
+        خمن الكلمة قبل ما يسالي الوقت!
+      </p>
+
+      <a href="games/guess-word/index.html">
+        <button>🎮 لعب</button>
+      </a>
+
     </div>
 
   </div>
+
 </section>
-  <main>
-  <h2>waajdiin nle3bo ?  🔥</h2>
-    
-</p>
-<div id="roomBox" class="room-box" style="display: none;">
-  <h3>🎉 الروم تْصايبات!</h3>
-  <p>هاهو الكود ديالك، صيفطو لصحابك:</p>
 
-  <div id="roomCode">-----</div>
+<main>
 
-  <button onclick="copyCode()">📋 كوبي الكود</button>
-</div>
-    <div class="buttons">
-<button onclick="playNow()">▶ dkhl 9sser </button>
+  <h2>Waajdiin nle3bo ? 🔥</h2>
 
-<button onclick="createRoom()">➕ saawb room</button>
+  <div id="roomBox" class="room-box" style="display:none;">
 
-<button onclick="joinRoom()">🔑dkhel lshi room</button>
-    </div>
-  </main>
+    <h3>🎉 الروم تصايبات!</h3>
 
-  <footer>
-    © 2026 Mini Games
-  </footer>
+    <p>هاهو الكود ديالك، صيفطو لصحابك.</p>
+
+    <div id="roomCode">-----</div>
+
+    <button onclick="copyCode()">
+      📋 كوبي الكود
+    </button>
+
+  </div>
+
+  <div class="buttons">
+
+    <button onclick="playNow()">
+      ▶ دخل بسرعة
+    </button>
+
+    <button onclick="createRoom()">
+      ➕ صاوب Room
+    </button>
+
+    <button onclick="joinRoom()">
+      🔑 دخل لروم
+    </button>
+
+  </div>
+
+</main>
+
+<footer>
+© 2026 Mini Games
+</footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
