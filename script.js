@@ -6,13 +6,23 @@ function createRoom() {
     roomCode += characters[Math.floor(Math.random() * characters.length)];
   }
 
-  alert("Room created! Your code is: " + roomCode);
+  document.getElementById("roomCode").textContent = roomCode;
+
+  document.getElementById("roomBox").style.display = "block";
+}
+
+function copyCode() {
+  const code = document.getElementById("roomCode").textContent;
+
+  navigator.clipboard.writeText(code);
+
+  alert("تكوپى الكود: " + code);
 }
 
 function joinRoom() {
-  const code = prompt("Enter the room code:");
+  const code = prompt("دخل كود الروم:");
 
   if (code) {
-    alert("Joining room: " + code.toUpperCase());
+    alert("غادي تدخل للروم: " + code.toUpperCase());
   }
 }
