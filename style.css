@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  background:
+    radial-gradient(circle at top left, rgba(130, 20, 120, 0.35), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(220, 20, 50, 0.28), transparent 35%),
+    #09070f;
+}
+
+header {
+  padding: 25px;
+  background: rgba(15, 8, 25, 0.85);
+  border-bottom: 1px solid rgba(180, 50, 180, 0.4);
+}
+
+h1 {
+  font-size: 42px;
+  color: #ffffff;
+  text-shadow:
+    0 0 10px #a020f0,
+    0 0 25px #e11d48;
+}
+
+header p {
+  margin-top: 10px;
+  color: #c7bfd0;
+}
+
+main {
+  padding: 80px 20px;
+}
+
+h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.text {
+  color: #b9b0c5;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 16px 27px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #7b1fa2, #d41445);
+  box-shadow: 0 8px 25px rgba(180, 20, 100, 0.25);
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 15px rgba(170, 40, 255, 0.7),
+    0 0 30px rgba(230, 20, 70, 0.45);
+}
+
+.room-box {
+  max-width: 440px;
+  margin: 0 auto 30px;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(25, 15, 35, 0.9);
+  border: 1px solid rgba(190, 50, 220, 0.45);
+  box-shadow:
+    0 0 25px rgba(150, 30, 220, 0.25),
+    0 0 35px rgba(220, 20, 70, 0.15);
+}
+
+.room-box h3 {
+  margin-bottom: 10px;
+  color: #f3d9ff;
+}
+
+.room-box p {
+  color: #c7bfd0;
+  margin-bottom: 18px;
+}
+
+#roomCode {
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 12px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  color: white;
+  background: #100b18;
+  border: 1px solid #a020f0;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 25px;
+  color: #93889f;
+  border-top: 1px solid rgba(180, 50, 180, 0.2);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 31px;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: min(300px, 90%);
+  }
+}
